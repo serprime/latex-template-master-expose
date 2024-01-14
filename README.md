@@ -1,2 +1,3 @@
-# latex-template-master-expose
-Latex template for expose of master thesis at FH Hagenberg in Information Engineering and Management (IEM)
+# Master Thesis Latex Templates
+
+Latex template for expose of master thesis at FH Hagenberg in Information Engineering and Management (IEM).
