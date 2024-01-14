@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper,titlepage]{article}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage[square]{natbib}
+\bibliographystyle{agsm}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\RequirePackage[top=36mm,bottom=40mm,left=32mm,right=32mm]{geometry}
+
+\title{Template: \protect\\ 
+            Expos\'{e} of a thesis \protect\\ 
+            at a Company}
+\author{Your Name}
+\date{2024}
+
+\makeatletter
+\let\Title\@title
+\let\Author\@author
+\let\Date\@date
+\makeatother
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\begin{titlepage}
+    \rule{0mm}{1mm}
+    \vspace*{0mm}
+    \begin{center}
+        \sffamily
+        \setlength{\unitlength}{1cm}
+        \parbox[c][5cm][c]{12cm}{
+            \centering\LARGE\bfseries
+            \setlength{\baselineskip}{25pt}
+            \Title
+        }
+        \vskip 12mm
+        \Large{\Author}
+        \vskip 12mm
+        {\includegraphics[height=30mm]{images/logo.pdf}}
+        \vskip 12mm
+        {\textbf{\LARGE{Masterarbeit}}} \\
+        {\textbf{\LARGE{Expos\'{e}}}}
+        \vskip 3mm
+        {\large Fachhochschul-Masterstudiengang}
+        \vskip 1mm
+        {\Large Information Engineering and Management}
+        \vskip 3mm
+        {\large Begutachter}
+        \vskip 1mm
+        {\Large Titel Vorname Nachname}
+        \vskip 3mm
+        {\large Hagenberg, \Date}
+    \end{center}%
+    \vfil%
+\end{titlepage}%
+
+\include{exposee}
+
+\bibliography{references}
+
+\end{document}
